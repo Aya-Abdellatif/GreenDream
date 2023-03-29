@@ -16,7 +16,7 @@
                        <!--HEADER-->
                        <header class="header">
                         <!--navbar-->
-                        <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
+                        <nav class="navbar navbar-expand-xl navbar-dark fixed-top">
                             <div class="container-fluid">
                     
                                 <a class="navbar-brand" href="/">
@@ -90,16 +90,16 @@
                           <div class="col-md-6 mb-4">
           
                             <div class="form-outline">
-                              <input type="text" name="name" id="firstName" class="form-control form-control-lg" />
-                              <label class="form-label" for="firstName">Name</label>
+                              <input type="text" name="firstname" id="firstName" class="form-control form-control-lg" />
+                              <label class="form-label" for="firstName">First Name</label>
                             </div>
           
                           </div>
                           <div class="col-md-6 mb-4">
           
                             <div class="form-outline">
-                              <input type="text" name="objname" id="lastName" class="form-control form-control-lg" />
-                              <label class="form-label" for="lastName">Object Name</label>
+                              <input type="text" name="lastname" id="lastName" class="form-control form-control-lg" />
+                              <label class="form-label" for="lastName">Last Name</label>
                             </div>
           
                           </div>
@@ -108,7 +108,7 @@
                         <div class="row">
                             <div class="col-12">
             
-                              <select name="type" class="select form-control-lg">
+                              <!--<select name="type" class="select form-control-lg">
                                 <option value="1" disabled>Choose Category</option>
                                 <option value="2">Waste</option>
                                 <option value="3">Plastic</option>
@@ -117,18 +117,25 @@
                                 <option value="6">HouseWare</option>
                                 <option value="7">Papers</option>
                                 <option value="8">Food</option>
-                              </select>
-                              <label class="form-label select-label">Choose Category</label>
+                              </select>-->
+                              <input class="form-control" type="file" id="formFileMultiple" multiple />
+                              <label class="form-label select-label">Upload your Category</label>
                             </div>
                         </div>
                         <br>
                         <div class="form-outline mb-4">
                         <div class="d-flex align-items-center">
                             <!--<p class="fw-bold mb-0 me-5 pe-3">How Mny</p>-->
-                            <div class="form-outline">
+                            <div class="row">
+                            <div class="form-outline col-md-6 mb-4">
+                              <input type="text" name="objname" id="lastName" class="form-control form-control-lg" />
+                              <label class="form-label" for="lastName">Object Name</label>
+                            </div>
+                            <div class="form-outline col-md-6 mb-4">
                               <input type="number" name="quantity" id="firstName" value="1" min="0" class="form-control form-control-lg" />
                               <label class="form-label" for="firstName">Quantity</label>
                             </div>
+                          </div>
                         </div>
                     </div>
                         <div class="row">
